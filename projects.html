@@ -1,33 +1,80 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>Nolin McFarland</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="./index.html">Nolin McFarland</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="./index.html">Home</a></li>
-                        <li class="active"><a href="./projects.html">Projects</a></li>
-                    </ul>
+
+<head>
+    <title>Nolin McFarland</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-xl bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/nmcfarland-profile.jpg" class="navbar-image" alt="Logo" width="24" height="24"
+                    class="d-inline-block align-text-top">
+                Nolin McFarland
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./projects.html">Projects</a>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        
-    </body>
+    <div id="projects">
+        <h1>Projects</h1>
+        <p>Three projects that taught me the fundamentals of HTML, CSS, and JavaScript.</p>
+
+        <div class="grid">
+            <div class="card" style="width: 18rem;">
+                <img src="./images/pacman-factory.png" class="card-img-top" alt="Eyes Project">
+                <div class="card-body">
+                    <h5 class="card-title">Pac-Man Factory</h5>
+                    <p class="card-text">Step into the Pac-Man Factory – where JavaScript brings countless hungry
+                        Pac-Men to
+                        life, racing around your screen in a Pac-Man frenzy!</p>
+                    <a href="https://github.com/nolinmcfarland/pacman-factory" class="btn btn-primary">GitHub →</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./images/eyes.png" class="card-img-top" alt="Eyes Project">
+                <div class="card-body">
+                    <h5 class="card-title">Eyes</h5>
+                    <p class="card-text">Watch them watch your cursor. A simple web app built with JavaScript that
+                        displays
+                        animated eyes that follow your cursor.</p>
+                    <a href="https://github.com/nolinmcfarland/eyes" class="btn btn-primary">GitHub →</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./images/bus-tracker.png" class="card-img-top" alt="Eyes Project">
+                <div class="card-body">
+                    <h5 class="card-title">Bus Tracker</h5>
+                    <p class="card-text">Track buses from the MTBA in realtime. Utilizes the Google Maps API to display
+                        markers for MTBA bus locations every 15 seconds.</p>
+                    <a href="https://github.com/nolinmcfarland/bus-tracker" class="btn btn-primary">GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

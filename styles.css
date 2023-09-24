@@ -1,9 +1,73 @@
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
+h1,
+h5 {
+    font-family: "Comfortaa";
 }
 
-footer {
-    background-color: #f2f2f2;
-    padding: 25px;
+p,
+a {
+    font-family: "Roboto";
+}
+
+#projects {
+    margin: 20px;
+    text-align: center;
+}
+
+#about {
+    margin: 20px;
+    text-align: center;
+}
+
+.navbar-image {
+    border-radius: 50%;
+}
+
+.video {
+    border-radius: 20px;
+    height: 215px;
+    width: 320px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.navbar {
+    padding: 10px !important;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns with equal width */
+    justify-content: center;
+    /* Center the grid horizontally */
+    width: 60%;
+    top: 20px;
+    left: 20%;
+    gap: 20px;
+    position: relative;
+}
+
+#bio {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    left: 20%;
+    text-align: left;
+}
+
+#contacts {
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+}
+
+.social {
+    padding: 8px;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
 }
