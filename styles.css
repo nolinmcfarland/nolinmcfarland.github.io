@@ -8,14 +8,21 @@ a {
     font-family: "Roboto";
 }
 
-#projects {
-    margin: 20px;
-    text-align: center;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns with equal width */
+    justify-content: center;
+    /* Center the grid horizontally */
+    width: 60%;
+    top: 20px;
+    left: 20%;
+    gap: 20px;
+    position: relative;
 }
 
-#about {
-    margin: 20px;
-    text-align: center;
+.navbar {
+    padding: 10px !important;
 }
 
 .navbar-image {
@@ -30,21 +37,23 @@ a {
     margin-right: 20px;
 }
 
-.navbar {
-    padding: 10px !important;
+.social {
+    padding: 8px;
+    color: white;
+    background-color: darkslateblue;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Three columns with equal width */
-    justify-content: center;
-    /* Center the grid horizontally */
-    width: 60%;
-    top: 20px;
-    left: 20%;
-    gap: 20px;
-    position: relative;
+#projects {
+    margin: 20px;
+    text-align: center;
+}
+
+#about {
+    margin: 20px;
+    text-align: center;
 }
 
 #bio {
@@ -61,13 +70,4 @@ a {
     padding: 20px;
     background-color: #f3f3f3;
     border-radius: 20px;
-}
-
-.social {
-    padding: 8px;
-    color: white;
-    background-color: dodgerblue;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
 }
